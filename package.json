@@ -1,5 +1,5 @@
 {
-  "name": "Quickstart",
+  "name": "kuickstart",
   "version": "1.0.0",
   "description": "ES6, Babel, Eslint, flowtype Node.js boilerplate.",
   "main": "src/main.js",
