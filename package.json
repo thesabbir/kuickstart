@@ -5,8 +5,8 @@
   "main": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "`npm bin`/babel ./src/main.js | node",
-    "build": "`npm bin`/babel ./src/main.js > build/app.js",
+    "start": "`npm bin`/babel-node ./src/main.js",
+    "build": "`npm bin`/babel ./src/main.js --out-file build/main.js --source-maps",
     "postinstall": "bash .prepare"
   },
   "author": "Sabbir Ahmed <sabbiir@gmail.com>",
