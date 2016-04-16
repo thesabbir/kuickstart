@@ -1,4 +1,4 @@
 {
   "presets": ["es2015"],
-  "plugins": ["transform-flow-comments"]
+	"plugins": ["typecheck", "syntax-flow", "transform-flow-comments"]
 }
