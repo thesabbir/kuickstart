@@ -1,6 +1,10 @@
 #!/bin/bash
-echo "Installing atom packages..."
 
+echo "Installing flow..."
+command -v brew >/dev/null 2>&1 || { echo >&2 "brew is not installed.  Aborting."; exit 1; }
+brew install flow
+
+echo "Installing atom packages..."
 command -v apm >/dev/null 2>&1 || { echo >&2 "apm is not installed.  Aborting."; exit 1; }
 apm install atom-ternjs	\
 autocomplete-flow	\
@@ -13,7 +17,3 @@ language-babel \
 linter \
 linter-eslint \
 linter-flow-plus \
-
-echo "Installing flow..."
-command -v brew >/dev/null 2>&1 || { echo >&2 "brew is not installed.  Aborting."; exit 1; }
-brew install flow
