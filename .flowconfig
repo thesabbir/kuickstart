@@ -1,0 +1,14 @@
+[version]
+
+[ignore]
+.*.idea*
+.*/node_modules/.*
+
+[include]
+./node_modules/
+
+[libs]
+./node_modules/flow-interfaces/interfaces/
+./interfaces/
+
+[options]
